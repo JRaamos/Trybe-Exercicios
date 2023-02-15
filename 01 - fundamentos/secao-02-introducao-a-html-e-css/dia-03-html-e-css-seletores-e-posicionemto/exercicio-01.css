@@ -9,13 +9,19 @@
 .width-and-height {
   height: 50px;
   width: 50px;
+
 }
 .padding{
   padding: 20px;
+  margin: -4px;
+ 
 }
 .margin {
   margin: 30px;
 }
 .border {
   border: 5px solid black;
+}
+.width {
+  margin-top: -4px;
 }
