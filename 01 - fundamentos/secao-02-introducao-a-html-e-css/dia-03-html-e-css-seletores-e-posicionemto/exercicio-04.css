@@ -1,0 +1,25 @@
+div:hover {
+  border: solid orange;
+}
+.color-01 {
+  background-color: antiquewhite;
+}
+.color-02{
+  background-color: aqua;
+}
+.color-03 {
+  background-color: chocolate;
+  width: 322px;
+  height: 70px;
+  font-size: 30px;
+}
+.color-04 {
+  background-color: darkcyan;
+}
+.color-05 {
+  background-color: darkgray;
+}
+h3 {
+  color: blue;
+  font-style: italic;
+}
