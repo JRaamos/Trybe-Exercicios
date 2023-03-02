@@ -1,20 +1,22 @@
-let saldo = 1000
-function moveAccount(saldo){
-  return 'Seu saldo é: '+saldo +'R$' 
-};
+let saldo = 1000;
 
-console.log(moveAccount(saldo));
-let headds = 100
-saldo = saldo + headds;
+function addBalance(valor){
+ return 'Seu saldo é: ' + (saldo + valor) +'R$'
+}
 
-console.log(moveAccount(saldo));
- let payment = 50;
- saldo = saldo - payment;
-console.log(moveAccount(saldo));
+function subtractBalance(valor) {
+  return 'Seu saldo é: ' + (saldo - valor) +'R$'
+}
 
-let rate = 0.01;
-saldo = saldo + (saldo * rate);
-console.log(moveAccount(saldo));
-saldo = saldo /2;
-console.log(moveAccount(saldo));
+function multiplyBalance(valor) {
+  return'Seu saldo é: ' + (saldo + (saldo * valor)) +'R$'
+}
 
+function divideBalance(valor) {
+  return'Seu saldo é: ' + (saldo / valor) +'R$'
+}
+
+console.log(addBalance(100));
+console.log(subtractBalance(50));
+console.log(multiplyBalance(0.01));
+console.log(divideBalance(2));
