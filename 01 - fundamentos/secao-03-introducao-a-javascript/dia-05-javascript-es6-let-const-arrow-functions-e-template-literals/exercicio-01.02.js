@@ -7,6 +7,10 @@
     nome: 'Luna',
     idade: 19
   } // Altere essa estrutura para corrigir o erro.
-
+  
   console.log('Nome:', pessoa.nome);
   console.log('Idade:', pessoa.idade);
+
+let favoriteFood = 'Lasanha';
+favoriteFood = 'Hambúrguer';
+console.log(favoriteFood);
