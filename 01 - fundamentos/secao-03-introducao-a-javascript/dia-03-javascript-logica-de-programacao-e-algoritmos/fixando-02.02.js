@@ -1,7 +1,6 @@
 let clientesTrybeBank = ['Ada', 'John', 'Gus'];
 
   function removeClient (client){
-    
     if(typeof client === 'string'){
       let customerFound = false;
       for (index = 0; index < clientesTrybeBank.length; index += 1){
