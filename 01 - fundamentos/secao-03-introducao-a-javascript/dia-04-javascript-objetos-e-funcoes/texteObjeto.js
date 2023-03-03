@@ -1,27 +1,25 @@
-let student1 = {
-  html: 'Muito Bom',
-  css: 'Bom',
-  javascript: 'Ótimo',
-  softskills: 'Ótimo',
+let info = {
+  personagem: 'Margarida',
+  origem: 'Pato Donald',
+  nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
+  recorrente: 'Sim',
 };
 
-let student2 = {
-  html: 'Bom',
-  css: 'Ótimo',
-  javascript: 'Ruim',
-  softskills: 'Ótimo',
-  git: 'Bom', // chave adicionada
+let info2 = {
+  personagem: 'Tio Patinhas',
+  origem: 'Christmas on Bear Mountain, Dell’s Four Color Comics #178',
+  nota: 'O último MacPatinhas',
+  recorrente: 'Sim',
 };
 
-function listSkills(student) {
-  let arrayOfSkills = Object.keys(student);
-  for (let index in arrayOfSkills) {
-    console.log(arrayOfSkills[index] + ', Nível: ' + student[arrayOfSkills[index]]);
+for (let key in info) {
+  if (
+    key === 'recorrente' &&
+    info[key] === 'Sim' &&
+    info2[key] === 'Sim'
+  ) {
+    console.log('Ambos recorrentes');
+  } else {
+    console.log(info[key] + ' e ' + info2[key]);
   }
-};
-
-console.log('Estudante 1');
-listSkills(student1);
-
-console.log('Estudante 2');
-listSkills(student2);
+}
