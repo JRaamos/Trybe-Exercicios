@@ -12,4 +12,3 @@ let element5 = element4.nextElementSibling
 let element6 = element5.nextSibling
 
 let element7 = element5.nextElementSibling
-console.log(element7);
