@@ -51,6 +51,23 @@ const decode = (string) => {
   return mapString(map, string);
 }
 
+const techList = (array, name) => {
+  if (array.length === 0) return 'Vazio!';
+  const objOrdenado = array.sort();
+  const obj = [];
+  for (let index = 0; index < objOrdenado.length; index += 1) {
+    obj.push(
+      {
+        tech: objOrdenado[index],
+        name: name
+      }
+    )
+  }
+  return obj;
+}
+
+console.log(techList([], 'lucas'));
+
 module.exports = {
-  myRemove, myFizzBuzz, encode, decode
+  myRemove, myFizzBuzz, encode, decode, techList
 }
