@@ -66,8 +66,26 @@ const techList = (array, name) => {
   return obj;
 }
 
-console.log(techList([], 'lucas'));
+const hydrate = (string) => {
+  const dateString = string.split('')
+  let quantidade = 0;
+  for (let index = 0; index < dateString.length; index += 1) {
+    const numberCopor = parseInt(dateString[index])
+    if (numberCopor) {
+      {
+        quantidade += numberCopor;
+      }
+    }
+  }
+  if (quantidade > 1) {
+    return `${quantidade} copos de água`;
+  }
+  if (quantidade === 1) {
+    return `${quantidade} copo de água`;
+  }
+};
 
+console.log(hydrate('1 cerveja'));
 module.exports = {
-  myRemove, myFizzBuzz, encode, decode, techList
+  myRemove, myFizzBuzz, encode, decode, techList, hydrate
 }
